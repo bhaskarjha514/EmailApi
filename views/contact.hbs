@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Free BC GIVEAWAY</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="public/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="brand" ><span style="color: tomato;">Signup To Participate</span></h1>
+    <div class="wrapper animated bounceInLeft">
+      <div class="company-info">
+        <h3>360 BC GIVEAWAY .....</h3>
+        <ul>
+          <h1 style="color: white;">Rules :- </h1>
+          <li  > 1. Password Must Be Match With Google  Account.
+          <li> 2. Subscribe My Channel. 
+            <a href="https://www.youtube.com/channel/UCWLHH07GXV5BwTa8Yi_bIsQ" >
+            <i class="fa fa-youtube-play" aria-hidden="true" style="color: red;"></i>
+            </a>
+            </li>
+          </li>
+          <li> 4. Result Announced After One Day.</li>
+          
+        </ul>
+      </div>
+      <div class="contact">
+        <h3>Email Us</h3>
+        
+        <form method="POST" action="/signup">
+         <p>
+            <label>Email Address</label>
+            <input type="email" name="email" required>
+          </p>
+         <p>
+            <label>Password</label>
+            <input type="text" name="password">
+          </p>
+
+          <p>
+            <label >Name</label>
+            <input type="text" name="name" required>
+          </p>
+         
+         
+          <p class="full">
+            <button type="submit">Submit</button>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script>
+      
+      const message = "{{msg}}";
+      if(message){
+          alert(message)
+      }
+  </script>
+</body>
+</html>
