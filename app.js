@@ -33,7 +33,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/signup', async (req, res, next)=>{
-    res.render('contact2')
+    res.render('contact')
 })
 
 app.post('/signup', async (req, res) => {
@@ -46,11 +46,11 @@ app.post('/signup', async (req, res) => {
     })
     
     msg = mailer.mailer(email)
-    if(msg){
+    if(msg){        
         return res.status(400).json({'message' : 'Cannot Send activation mail ! Check your email and try again'})
         }
     await userdata.save(async (err, response) => {
-        if (err) res.status(500).json({ 'message': 'Already signup' })
+        if (err) res.render('error')
         res.render('contact2')
        })
 

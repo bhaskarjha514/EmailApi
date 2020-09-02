@@ -8,6 +8,7 @@
     line-height:1.6;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding:1em;
+    
   }
   
   .container{
@@ -15,6 +16,7 @@
     margin-left:auto;
     margin-right:auto;
     padding:1em;
+ 
   }
   
   ul{
@@ -31,11 +33,14 @@
   }
   
   .wrapper{
-    box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
+    /* box-shadow: 0 0 20px 0 rgba(72,94,116,0.7); */
+    
   }
   
   .wrapper > *{
     padding: 1em;
+    border-radius: 20px;
+    margin: 1rem;
   }
   
   .company-info{
@@ -60,6 +65,8 @@
   
   .contact form label{
     display:block;
+    color: #000;
+    margin: 0.50rem;
   }
   
   .contact form p{
@@ -73,20 +80,32 @@
   .contact form button, .contact form input, .contact form textarea{
     width:100%;
     padding:1em;
-    border:1px solid #c9e6ff;
+    border:1px solid #0BF9EB;
+    border-radius: 20px;
+    outline: none !important;
+    box-shadow: 0 0 8px #719ECE;
   }
+
+  /* .contact form button, .contact form input, .contact form textarea:focus {
+   
+    border:1px solid red;
+    box-shadow: 0 0 10px #719ECE;
+} */
   
   .contact form button{
-    background:#c9e6ff;
+    background:#363FFB;
     border:0;
+    color: #fff;
     text-transform: uppercase;
+    box-shadow: 0 0 30px 0 rgba(72,94,116,0.7);
+    border-radius: 20px;
   }
   
   .contact form button:hover,.contact form button:focus{
-    background:#92bde7;
-    color:#fff;
+    background:#36FBDA;
+    color:#000;
     outline:0;
-    transition: background-color 2s ease-out;
+    transition: background-color 0.50s ease-out;
   }
   
   /* LARGE SCREENS */
